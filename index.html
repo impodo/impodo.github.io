@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>최준영 - 포트폴리오</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader">
+            <div class="loader-inner">
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+            </div>
+        </div>
+        <h2 class="loading-text">최준영 포트폴리오</h2>
+    </div>
+
+    <!-- Control Panel -->
+    <div class="control-panel">
+        <button class="control-btn" id="darkModeToggle" title="다크 모드 토글">
+            <i class="fas fa-moon"></i>
+        </button>
+        <button class="control-btn" id="languageToggle" title="언어 변경">
+            <span class="lang-text">EN</span>
+        </button>
+    </div>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="profile-image-container">
+                <img src="images/sido1.png" alt="최준영 프로필" class="profile-image">
+            </div>
+            <h1 class="name">최준영</h1>
+            <p class="subtitle">Frontend Developer</p>
+            <div class="scroll-indicator">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">기술 스택</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <i class="fab fa-cuttlefish skill-icon"></i>
+                        <h3>C</h3>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-skill="85"></div>
+                    </div>
+                    <span class="skill-percentage">85%</span>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <i class="fab fa-python skill-icon"></i>
+                        <h3>Python</h3>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-skill="90"></div>
+                    </div>
+                    <span class="skill-percentage">90%</span>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <i class="fab fa-java skill-icon"></i>
+                        <h3>Java</h3>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-skill="40"></div>
+                    </div>
+                    <span class="skill-percentage">40%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">프로젝트</h2>
+            <div class="projects-grid">
+                <div class="project-card" onclick="openModal('project1')">
+                    <div class="project-thumbnail">
+                        <img src="images/chapchappay.png" alt="ChapChap Pay">
+                        <div class="project-overlay">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                    </div>
+                    <h3>ChapChap Pay</h3>
+                </div>
+                
+                <div class="project-card" onclick="openModal('project2')">
+                    <div class="project-thumbnail">
+                        <img src="images/wormgame.png" alt="지렁이게임">
+                        <div class="project-overlay">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                    </div>
+                    <h3>지렁이게임</h3>
+                </div>
+                
+                <div class="project-card" onclick="openModal('project3')">
+                    <div class="project-thumbnail">
+                        <img src="images/aduino.jpg" alt="거짓말탐지기">
+                        <div class="project-overlay">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                    </div>
+                    <h3>거짓말탐지기</h3>
+                </div>
+                
+                <div class="project-card" onclick="openModal('project4')">
+                    <div class="project-thumbnail">
+                        <img src="images/ecardata.png" alt="전기차 충전소 데이터분석">
+                        <div class="project-overlay">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                    </div>
+                    <h3>전기차 충전소 데이터분석</h3>
+                </div>
+
+                <div class="project-card" onclick="openModal('project5')">
+                    <div class="project-thumbnail">
+                        <img src="images/locate.png" alt="물품 위치 정보 시스템">
+                        <div class="project-overlay">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                    </div>
+                    <h3>물품 위치 정보 시스템</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Goal Section -->
+    <section class="career-goal" id="career">
+        <div class="container">
+            <div class="career-content">
+                <div class="career-text">
+                    <h2>나의 희망 직무</h2>
+                    <h3>프론트엔드 개발자</h3>
+                    <p>사용자 경험을 최우선으로 생각하며, 창의적이고 직관적인 웹 인터페이스를 구현하는 것이 저의 목표입니다. 최신 기술 트렌드를 활용하여 사용자가 만족할 수 있는 서비스를 만들어나가겠습니다.</p>
+                </div>
+                <div class="career-image">
+                    <img src="images/frontend.jpg" alt="프론트엔드 개발">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">연락처</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>이메일</h3>
+                            <p>impoliteman123@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <div>
+                            <h3>GitHub</h3>
+                            <a href="https://github.com/impodo" target="_blank">github.com/impodo</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-instagram"></i>
+                        <div>
+                            <h3>Instagram</h3>
+                            <a href="https://www.instagram.com/jun0_choi_/?hl=ko" target="_blank">instagram.com/jun0_choi_</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>전화번호</h3>
+                            <p>010-5717-1352</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modals -->
+    <div class="modal" id="project1">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project1')">&times;</span>
+            <h2>ChapChap Pay</h2>
+            <img src="images/chapchappay.png" alt="ChapChap Pay">
+            <p>OCR기술과 NLP기술을 활용한 영수증 인식 어플입니다. 영수증 사진의 텍스트 데이터를 인식 후 자연어 처리 기술로 보다 정확한 데이터 추출을 가능하게 하여 개인사업자들의 세금 정산 업무에 도움을 줄 수 있도록 제작하였습니다.</p>
+            <div class="tech-stack">
+                <span class="tech-tag">OCR</span>
+                <span class="tech-tag">NLP</span>
+                <span class="tech-tag">Firebase</span>
+                <span class="tech-tag">MLkit</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="project2">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project2')">&times;</span>
+            <h2>지렁이게임</h2>
+            <img src="images/wormgame.png" alt="지렁이게임">
+            <p>C언어로 연결리스트를 활용해 진행한 지렁이게임 프로젝트입니다. 방향키로 조작하여 @에 닿을 시 몸집과 스코어가 늘어나는 최고점수를 갱신하는 게임입니다.</p>
+            <div class="tech-stack">
+                <span class="tech-tag">C언어</span>
+                <span class="tech-tag">Game</span>
+                <span class="tech-tag">연결리스트</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="project3">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project3')">&times;</span>
+            <h2>거짓말탐지기</h2>
+            <img src="images/aduino.jpg" alt="거짓말탐지기">
+            <p>아두이노 심박수 센서를 이용해 거짓말탐지기를 만들었습니다. 받은 심박수가 마지막보다 높을 때 빨간색으로 빛나고, 마지막보다 낮을 때 초록색으로 빛나도록 제작해봤습니다.</p>
+            <div class="tech-stack">
+                <span class="tech-tag">아두이노</span>
+                <span class="tech-tag">심박수 센서</span>
+                <span class="tech-tag">거짓말탐지기</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="project4">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project4')">&times;</span>
+            <h2>전기차 충전소 데이터분석</h2>
+            <img src="images/ecardata.png" alt="전기차 충전소 데이터분석">
+            <p>(향후 예정) 현재 진행 중인 전기차와 전기차 전용 충전소를 지역 별로 데이터를 분석한 뒤 어디에 충전소가 있는지 조회하기 쉽도록 하는 프로젝트를 진행중입니다.</p>
+            <div class="tech-stack">
+                <span class="tech-tag">Orange</span>
+                <span class="tech-tag">공공데이터센터</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="project5">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project5')">&times;</span>
+            <h2>물품 위치 정보 시스템</h2>
+            <img src="images/locate.png" alt="물품 위치 정보 시스템">
+            <p>(향후 예정) 주변의 마트 정보를 받아 원하는 품목의 위치 정보와 해당 마트의 정보를 전달하는 등의 역할을 하는 어플이 제작 중에 있습니다.</p>
+            <div class="tech-stack">
+                <span class="tech-tag">Android Studio</span>
+                <span class="tech-tag">Kotlin</span>
+                <span class="tech-tag">Firebase</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/portfolio.js"></script>
+</body>
+</html>
