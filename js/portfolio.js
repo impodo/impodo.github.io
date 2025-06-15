@@ -69,7 +69,7 @@ document.querySelector('.scroll-indicator').addEventListener('click', () => {
 // Language translations
 const translations = {
     ko: {
-        subtitle: "Frontend Developer",
+        subtitle: "20210517 컴퓨터공학과",
         skillsTitle: "기술 스택",
         projectsTitle: "프로젝트",
         careerGoalTitle: "나의 희망 직무",
@@ -90,7 +90,7 @@ const translations = {
         App2Desc: "(향후 예정) 주변의 마트 정보를 받아 원하는 품목의 위치 정보와 해당 마트의 정보를 전달하는 등의 역할을 하는 어플이 제작 중에 있습니다."
       },
     en: {
-        subtitle: "Frontend Developer",
+        subtitle: "20210517 Department of Computer Science",
         skillsTitle: "Technical Skills",
         projectsTitle: "Projects",
         careerGoalTitle: "My Career Goal",
