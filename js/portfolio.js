@@ -84,9 +84,9 @@ const translations = {
         GameDesc: "C언어로 연결리스트를 활용해 진행한 지렁이게임 프로젝트입니다. 방향키로 조작하여 @에 닿을 시 몸집과 스코어가 늘어나는 최고점수를 갱신하는 게임입니다.",
         AduinoTitle: "거짓말탐지기",
         AduinoDesc: "아두이노 심박수 센서를 이용해 거짓말탐지기를 만들었습니다. 받은 심박수가 마지막보다 높을 때 빨간색으로 빛나고, 마지막보다 낮을 때 초록색으로 빛나도록 제작해봤습니다.",
-        DataTitle: "전기차 충전소 데이터분석",
+        DataTitle: "(예정)전기차 충전소 데이터분석",
         DataDesc: "(향후 예정) 현재 진행 중인 전기차와 전기차 전용 충전소를 지역 별로 데이터를 분석한 뒤 어디에 충전소가 있는지 조회하기 쉽도록 하는 프로젝트를 진행중입니다.",
-        App2Title: "물품 위치 정보 시스템",
+        App2Title: "(예정)물품 위치 정보 시스템",
         App2Desc: "(향후 예정) 주변의 마트 정보를 받아 원하는 품목의 위치 정보와 해당 마트의 정보를 전달하는 등의 역할을 하는 어플이 제작 중에 있습니다."
       },
     en: {
@@ -105,9 +105,9 @@ const translations = {
         GameDesc: "A worm game project using C language with linked lists. The game is controlled by arrow keys, and when the worm reaches '@', its size and score increase, aiming to achieve the highest score.",
         AduinoTitle: "Lie Detector",
         AduinoDesc: "A lie detector made using an Arduino heart rate sensor. The device lights up red when the received heart rate is higher than the last one, and green when it is lower, indicating a potential lie.",
-        DataTitle: "Electric Vehicle Charging Station Data Analysis",
+        DataTitle: "(Upcoming)Electric Vehicle Charging Station Data Analysis",
         DataDesc: "(Upcoming) Currently working on a project analyzing data on electric vehicles and their dedicated charging stations by region, making it easy to find where charging stations are located.",
-        App2Title: "Item Location Information System",
+        App2Title: "(Upcoming)Item Location Information System",
         App2Desc: "(Upcoming) An application in development that provides location information for desired items and details about nearby stores, based on local market data."
       }
 };
